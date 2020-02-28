@@ -296,7 +296,7 @@ public class Fachada {
 	{
 		
 			jogadorAtual = numJog;
-			int aux;
+			//int aux;
 			
 			janelas[0].alteraVisibilidadeBotao(0, true);
 			janelas[0].alteraVisibilidadeBotao(1, true);
@@ -649,21 +649,6 @@ public class Fachada {
 			JOptionPane.showMessageDialog(new JFrame(), "Nao foi possivel executar a ordem de compra. Limite de compras de fichas excedido", "Compra de fichas nao efetuada",JOptionPane.ERROR_MESSAGE);
 			System.out.printf("Limite de compras de fichas excedido");
 		}
-		/*
-		janelas[i].alteraVisibilidadeBotao(0, true);
-			janelas[i].alteraVisibilidadeBotao(1, true);
-			janelas[i].alteraVisibilidadeBotao(2, true);
-			janelas[i].alteraVisibilidadeBotao(3, false);
-			janelas[i].alteraVisibilidadeBotao(4, false);
-				
-			janelas[i].alteraEstadoBotao(0, false);
-			janelas[i].alteraEstadoBotao(1, false);
-			janelas[i].alteraEstadoBotao(2, false);
-				
-			janelas[i].botoesJogador.apostaValor.setText("Aposta: $" + Integer.toString(listaJogadores[i].aposta));
-			janelas[i].botoesJogador.carteira.setText("$" + Integer.toString(listaJogadores[i].dinheiro));
-		*/
-		
 	}
 
 	public static void carregarJogo(JogoObservador ob, String endereco, Jogador jogadores[]) {
@@ -683,7 +668,7 @@ public class Fachada {
 
 		    while ((text = reader.readLine()) != null) 
 		    {
-		    	aux ++;
+		    	aux++;
 		    }
 		   
 		    qntJog = aux/3;
@@ -718,6 +703,7 @@ public class Fachada {
 		    	}
 		    		
 		    }
+		    reader.close();
 		} 
 		
 		catch (FileNotFoundException e) {
@@ -729,10 +715,12 @@ public class Fachada {
 		} 
 		finally {
 		    try {
-		        if (reader != null) {
-		            reader.close();
-		        }
-		    } catch (IOException e) {
+		        	if (reader != null) {
+		        		reader.close();
+		        	}
+		    	} 
+		    catch (IOException e) {
+		 
 		    }
 		}
 

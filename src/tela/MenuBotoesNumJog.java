@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import javax.swing.JButton;
 
 import observadores.*;
-import controle.*;
+//import controle.*;
 
 public class MenuBotoesNumJog extends MenuPainel implements ActionListener, MenuObservado
 {

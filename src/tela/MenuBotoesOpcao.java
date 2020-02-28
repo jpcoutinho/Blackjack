@@ -1,16 +1,16 @@
 package tela;
 
 
-import java.awt.Color;
-import java.awt.Font;
+//import java.awt.Color;
+//import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
 import javax.swing.JButton;
 import javax.swing.JFileChooser;
-import javax.swing.JLabel;
-import javax.swing.filechooser.FileFilter;
+//import javax.swing.JLabel;
+//import javax.swing.filechooser.FileFilter;
 
 import observadores.*;
 
