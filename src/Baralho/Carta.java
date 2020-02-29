@@ -44,7 +44,6 @@ public class Carta extends JComponent{
 			try 
 			{
 				cartaImagem = ImageIO.read(getClass().getResource(filename));
-				//cartaFundo = ImageIO.read(new File(filename2));
 				cartaFundo = ImageIO.read(getClass().getResource(filename2));
 			
 			}
@@ -53,8 +52,6 @@ public class Carta extends JComponent{
 				System.out.println(e.getMessage());
 				System.exit(1);
 			}
-			
-			
 	}
 	
 	public Image ExibirCarta()

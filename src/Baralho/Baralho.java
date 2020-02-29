@@ -57,10 +57,10 @@ public class Baralho {
 					cartaValorAux = String.valueOf(j);
 				
 				String filename = "/"+ cartaValorAux + naipe +".gif";
+				
 				//System.out.println(filename);
 				
 				baralho.add(new Carta(filename, j));
-				
 			}
 		}
 		

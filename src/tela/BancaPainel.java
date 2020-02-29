@@ -4,10 +4,10 @@ import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Image;
 import java.awt.Toolkit;
-import java.io.File;
+
 import java.io.IOException;
 import java.util.ArrayList;
-//import java.util.List;
+
 
 import javax.imageio.ImageIO;
 import javax.swing.JPanel;
@@ -45,10 +45,10 @@ public class BancaPainel extends JPanel{
 		ALT_PADRAO = alturaTela/2;
 		
 		this.mao = mao;
-		imagem ();	
+		imagem();	
 	}
 
-	public void imagem ()
+	public void imagem()
 	{
 
 		String filename = "/blackjackBKG.png";
@@ -57,12 +57,12 @@ public class BancaPainel extends JPanel{
 		{
 				img = ImageIO.read(getClass().getResource(filename));
 				
-				ficha1 = ImageIO.read(getClass().getResource("/ficha 1$.png"));
-				ficha5 = ImageIO.read(getClass().getResource("/ficha 5$.png"));
-				ficha10 = ImageIO.read(getClass().getResource("/ficha 10$.png"));
-				ficha20 = ImageIO.read(getClass().getResource("/ficha 20$.png"));
-				ficha50 = ImageIO.read(getClass().getResource("/ficha 50$.png"));
-				ficha100 = ImageIO.read(getClass().getResource("/ficha 100$.png"));
+				ficha1 		= ImageIO.read(getClass().getResource("/ficha 1$.png"));
+				ficha5 		= ImageIO.read(getClass().getResource("/ficha 5$.png"));
+				ficha10 	= ImageIO.read(getClass().getResource("/ficha 10$.png"));
+				ficha20 	= ImageIO.read(getClass().getResource("/ficha 20$.png"));
+				ficha50 	= ImageIO.read(getClass().getResource("/ficha 50$.png"));
+				ficha100 	= ImageIO.read(getClass().getResource("/ficha 100$.png"));
 		
 		}
 		catch(IOException e) 
