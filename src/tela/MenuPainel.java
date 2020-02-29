@@ -19,11 +19,11 @@ public class MenuPainel extends JPanel{
 	public void imagem()
 	{
 
-		String filename = "imagens/menu/menu.jpg";
+		String filename = "/menu/menu.jpg";
 
 		try 
 		{
-				img = ImageIO.read(new File(filename));
+				img = ImageIO.read(getClass().getResource(filename));
 		
 		}
 		catch(IOException e) 

@@ -55,12 +55,12 @@ public class BancaPainelAposta extends JPanel{
 		{
 			img = ImageIO.read(new File(filename));
 
-			ficha1 = ImageIO.read(new File("imagens/ficha 1$.png"));
-			ficha5 = ImageIO.read(new File("imagens/ficha 5$.png"));
-			ficha10 = ImageIO.read(new File("imagens/ficha 10$.png"));
-			ficha20 = ImageIO.read(new File("imagens/ficha 20$.png"));
-			ficha50 = ImageIO.read(new File("imagens/ficha 50$.png"));
-			ficha100 = ImageIO.read(new File("imagens/ficha 100$.png"));
+			ficha1 = ImageIO.read(getClass().getResource("/ficha 1$.png"));
+			ficha5 = ImageIO.read(getClass().getResource("/ficha 5$.png"));
+			ficha10 = ImageIO.read(getClass().getResource("/ficha 10$.png"));
+			ficha20 = ImageIO.read(getClass().getResource("/ficha 20$.png"));
+			ficha50 = ImageIO.read(getClass().getResource("/ficha 50$.png"));
+			ficha100 = ImageIO.read(getClass().getResource("/ficha 100$.png"));
 
 		}
 		catch(IOException e) 

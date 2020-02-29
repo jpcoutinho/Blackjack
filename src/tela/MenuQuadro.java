@@ -40,8 +40,6 @@ public class MenuQuadro extends JFrame implements MenuObservador, JogoObservado
 			int x = larguraTela/2 - LARG_PADRAO/2;
 			int y = alturaTela/2 - ALT_PADRAO/2;
 			
-			//painelMenu.img = painelMenu.img.getScaledInstance(LARG_PADRAO, ALT_PADRAO, Image.SCALE_AREA_AVERAGING);
-			
 			setBounds(x, y, LARG_PADRAO, ALT_PADRAO);
 			setDefaultCloseOperation(EXIT_ON_CLOSE);
 			
@@ -69,7 +67,6 @@ public class MenuQuadro extends JFrame implements MenuObservador, JogoObservado
 		@Override
 		public void atualizar(MenuObservado tela) 
 		{
-			
 			menu = tela;
 			imprimeBotoes();
 		}
@@ -80,14 +77,10 @@ public class MenuQuadro extends JFrame implements MenuObservador, JogoObservado
 			
 			for (int i = 0; i<listaObservadores.size(); i++ ) 
 			{
-				
 				aux = listaObservadores.get(i);
 				
 				aux.atualizar(qntJog); //atualiza o quadro com um novo painel 
-					
-				
 			}
-			 
 		}
 
 		@Override
@@ -104,7 +97,6 @@ public class MenuQuadro extends JFrame implements MenuObservador, JogoObservado
 
 		@Override
 		public void notificaObservador(int qntJog) {
-			
 			
 			JogoObservador aux;
 			
@@ -138,8 +130,6 @@ public class MenuQuadro extends JFrame implements MenuObservador, JogoObservado
 					
 				}
 			}
-
-			
 		}
 
 		@Override
@@ -168,9 +158,5 @@ public class MenuQuadro extends JFrame implements MenuObservador, JogoObservado
 				
 			aux.carregar(endereco); //atualiza o quadro com um novo painel 
 			}
-	
-		}
-			
+		}	
 	}
-
-

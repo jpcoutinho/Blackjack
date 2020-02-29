@@ -19,7 +19,7 @@ public class Carta extends JComponent{
 	public char naipe;
 	
 	String filename;
-	String filename2 = "imagens/deck1.gif";
+	String filename2 = "/deck1.gif";
 	
 	private boolean cartaVisibilidade;
 	
@@ -38,16 +38,17 @@ public class Carta extends JComponent{
 		
 		this.filename = filename;
 		
-		imagem ();	
+		imagem();	
 		
 	}
 	
-	public void imagem ()
+	public void imagem()
 	{
 			try 
 			{
-				cartaImagem = ImageIO.read(new File(filename));
-				cartaFundo = ImageIO.read(new File(filename2));
+				cartaImagem = ImageIO.read(getClass().getResource(filename));
+				//cartaFundo = ImageIO.read(new File(filename2));
+				cartaFundo = ImageIO.read(getClass().getResource(filename2));
 			
 			}
 			catch(IOException e) 

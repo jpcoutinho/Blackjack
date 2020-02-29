@@ -703,7 +703,6 @@ public class Fachada {
 		    	}
 		    		
 		    }
-		    reader.close();
 		} 
 		
 		catch (FileNotFoundException e) {
@@ -750,8 +749,6 @@ public class Fachada {
 		    }
 		   
 		    qntJog = aux/3;
-		  
-		    
 		} 
 		
 		catch (FileNotFoundException e) {

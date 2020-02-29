@@ -27,11 +27,11 @@ public class JogadorPainel extends JPanel{
 	public void imagem ()
 	{
 
-		String filename = "imagens/blackjackBKG.png";
+		String filename = "/blackjackBKG.png";
 		
 		try 
 		{
-				img = ImageIO.read(new File(filename));
+				img = ImageIO.read(getClass().getResource(filename));
 		
 		}
 		catch(IOException e) 

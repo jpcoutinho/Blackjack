@@ -57,12 +57,12 @@ public class BancaPainel extends JPanel{
 		{
 				img = ImageIO.read(new File(filename));
 				
-				ficha1 = ImageIO.read(new File("imagens/ficha 1$.png"));
-				ficha5 = ImageIO.read(new File("imagens/ficha 5$.png"));
-				ficha10 = ImageIO.read(new File("imagens/ficha 10$.png"));
-				ficha20 = ImageIO.read(new File("imagens/ficha 20$.png"));
-				ficha50 = ImageIO.read(new File("imagens/ficha 50$.png"));
-				ficha100 = ImageIO.read(new File("imagens/ficha 100$.png"));
+				ficha1 = ImageIO.read(getClass().getResource("/ficha 1$.png"));
+				ficha5 = ImageIO.read(getClass().getResource("/ficha 5$.png"));
+				ficha10 = ImageIO.read(getClass().getResource("/ficha 10$.png"));
+				ficha20 = ImageIO.read(getClass().getResource("/ficha 20$.png"));
+				ficha50 = ImageIO.read(getClass().getResource("/ficha 50$.png"));
+				ficha100 = ImageIO.read(getClass().getResource("/ficha 100$.png"));
 		
 		}
 		catch(IOException e) 
@@ -125,18 +125,6 @@ public class BancaPainel extends JPanel{
 			g.drawImage(mao.get(i).ExibirCarta(), x, y, 75, 100, null);
 			x +=82;
 		}
-		
-/*		int larguraFicha = 60;
-		int alturaFicha = 60;
-		
-		g.drawImage(ficha1,  LARG_PADRAO/2 - larguraFicha*3, 0, larguraFicha, alturaFicha, null);
-		g.drawImage(ficha5,  LARG_PADRAO/2 - larguraFicha*2, 0, larguraFicha, alturaFicha, null);
-		g.drawImage(ficha10, LARG_PADRAO/2 - larguraFicha*1, 0, larguraFicha, alturaFicha, null);
-		g.drawImage(ficha20, LARG_PADRAO/2 + larguraFicha*0, 0, larguraFicha, alturaFicha, null);
-		g.drawImage(ficha50, LARG_PADRAO/2 + larguraFicha*1, 0, larguraFicha, alturaFicha, null);
-		g.drawImage(ficha100,LARG_PADRAO/2 + larguraFicha*2, 0, larguraFicha, alturaFicha, null);*/
-		
 	}
-
 }
 

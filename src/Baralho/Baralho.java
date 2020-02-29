@@ -61,7 +61,7 @@ public class Baralho {
 				else
 					cartaValorAux = String.valueOf(j);
 				
-				String filename = "imagens/" + cartaValorAux + naipe +".gif";
+				String filename = "/"+ cartaValorAux + naipe +".gif";
 				//System.out.println(filename);
 				
 				baralho.add(new Carta(filename, j));
