@@ -1,4 +1,4 @@
-	package tela;
+package tela;
 
 import java.awt.*; //ferramentas para posicionamento
 import java.util.ArrayList;

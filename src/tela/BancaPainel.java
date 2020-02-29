@@ -51,7 +51,7 @@ public class BancaPainel extends JPanel{
 	public void imagem ()
 	{
 
-		String filename = "imagens/blackjackBKG.png";
+		String filename = "/blackjackBKG.png";
 
 		try 
 		{

@@ -21,10 +21,10 @@ public class JogadorPainel extends JPanel{
 	public JogadorPainel(ArrayList<Carta> mao)
 	{
 		this.mao = mao;
-		imagem ();	
+		imagem();	
 	}
 
-	public void imagem ()
+	public void imagem()
 	{
 
 		String filename = "/blackjackBKG.png";
