@@ -47,16 +47,6 @@ public class JogoControle implements JogoObservador {
 	
 	public void passaVez() 
 	{	
-		/*if (Fachada.verificaJogadoresJogando() == false) 
-		{
-			System.out.println("Todos os jogadores terminaram suas jogadas");
-			
-			indiceAtual = 0;
-			
-			return;
-			
-		}*/
-		
 		
 		if(indiceAtual+1 == jogadoresValidos.size())
 		{
@@ -67,17 +57,6 @@ public class JogoControle implements JogoObservador {
 		else
 			indiceAtual++;
 			
-	/*	if (Fachada.verificaSituacaoJogador(jogadoresValidos.get(indiceAtual)) == true) //
-		{
-			return;
-		}
-			
-		else
-		{
-				System.out.println("Entrei no else da passaVez");
-				passaVez();
-		}
-		*/
 	}
 	
 	
@@ -173,9 +152,6 @@ public class JogoControle implements JogoObservador {
 				e.printStackTrace();
 			}
 		}
-			
-		
-	
 	}
 
 
@@ -264,17 +240,8 @@ public class JogoControle implements JogoObservador {
 			System.out.println("Todos os jogadores efetuaram suas apostas");
 			return;
 		}
-			
-	/*	while(Fachada.verificaJogadorSentado(jogadoresValidos.get(indiceAtual)) == false)
-		{
-			indiceAtual++;
-		}*/
-		
-			
+						
 		Fachada.vezJogadorAposta(jogadoresValidos.get(indiceAtual));
-		
-			
-		
 	}
 
 	@Override

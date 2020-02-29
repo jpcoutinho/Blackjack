@@ -55,7 +55,7 @@ public class BancaPainel extends JPanel{
 
 		try 
 		{
-				img = ImageIO.read(new File(filename));
+				img = ImageIO.read(getClass().getResource(filename));
 				
 				ficha1 = ImageIO.read(getClass().getResource("/ficha 1$.png"));
 				ficha5 = ImageIO.read(getClass().getResource("/ficha 5$.png"));

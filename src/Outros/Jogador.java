@@ -178,17 +178,13 @@ public class Jogador implements JogoObservado{
 			{
 				aux.estourouMao(); 
 				
-			}
-			
-		}
-		
+			}	
+		}	
 	}
 
 
 	@Override
 	public void notificaObservadorAposta(int valor) {
-		// TODO Auto-generated method stub
-		
+		// TODO Auto-generated method stub	
 	}
-	
 }
